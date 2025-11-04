@@ -1,0 +1,57 @@
+.common_layout {
+  margin: auto;
+  max-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #d0e1f9;
+
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  // padding-bottom: 24px;
+
+  .layout_content_container {
+    .content_box {
+      padding: 1rem 1rem 0rem 1rem;
+
+      .content_container {
+        border-radius: 20px;
+
+        .pageTitle {
+          color: #000;
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 2.19rem;
+          font-style: normal;
+          font-weight: 500;
+          margin-bottom: 0.5rem;
+          line-height: normal;
+
+          @media screen and (max-width: 600px) {
+            font-size: 24px;
+          }
+        }
+
+        .pageContent {
+          // height: calc(100vh - 87px);
+          // max-height: calc(100vh - 127px);
+          padding-bottom: 42px;
+          overflow-y: auto;
+          overflow-x: hidden !important;
+
+          &::-webkit-scrollbar {
+            display: none !important;
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        padding: 8px 10px 0rem 10px;
+      }
+    }
+
+    .tournament-content-box {
+      padding: 0;
+    }
+  }
+}

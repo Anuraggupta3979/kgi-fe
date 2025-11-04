@@ -1,0 +1,59 @@
+.kvc_container {
+  .desc {
+    color: #333333;
+    text-align: justify;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media screen and (max-width: 600px) {
+      font-size: 16px !important;
+    }
+  }
+  label {
+    color: #333333;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: normal;
+  }
+  .inputBox {
+    border-radius: 4px !important;
+    border: 1px solid #333333 !important;
+    background: #ebf7ff !important;
+    font-size: 12px !important;
+    height: 50px !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 16px !important;
+  }
+}
+.kyc_otp_modal {
+  .otpContainer {
+    gap: 12px !important;
+    justify-content: space-between;
+    span {
+      display: none !important;
+    }
+  }
+  .otpInput {
+    text-align: center;
+    width: 100% !important;
+    height: 42px;
+    color: #fff !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none !important;
+    border-bottom: 1px solid #f3f5f9 !important;
+    background: #4d5975 !important;
+    border-radius: 8px !important;
+  }
+  .otpInput:focus-visible {
+    outline: #636363 !important;
+  }
+}

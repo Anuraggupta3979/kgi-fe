@@ -1,0 +1,115 @@
+.history_container {
+  .historyContentContainer {
+    .content_container {
+      .pageContent {
+        .table_header_div {
+          background: #040524 !important;
+          border-radius: 8px 8px 0 0 !important;
+          .table_header_row {
+            padding: 16px !important;
+            background: linear-gradient(
+              90deg,
+              rgb(8, 36, 66) 0%,
+              rgb(8, 36, 66) 47%,
+              rgb(4, 24, 45) 100%
+            ) !important;
+            border-radius: 8px !important;
+            .searchBox {
+              border-radius: 8px !important;
+              border: none !important;
+              background: white !important;
+              color: #9ca9d8 !important;
+              font-family: Arial;
+              font-size: 16px !important;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              height: 100%;
+              // max-width: 399px;
+              // min-width: 300px;
+              .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+                border-radius: 8px !important;
+              }
+              .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+                border-radius: 8px !important;
+              }
+              .ant-input-affix-wrapper {
+                background: white !important;
+                color: #333333 !important;
+                height: 40px !important;
+                input {
+                  background: white !important;
+                  color: #9ca9d8 !important;
+                  font-family: Arial;
+                  font-size: 16px !important;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+              .ant-input-group-addon {
+                display: none !important;
+              }
+            }
+          }
+        }
+        .ant-table-title {
+          padding: 0 !important;
+          border: 8px !important;
+        }
+        th {
+          color: #333333;
+          text-align: center;
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @media screen and (max-width: 600px) {
+            font-size: 16px;
+          }
+        }
+        tbody td {
+          color: #333333;
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 14px;
+        }
+        tbody td span {
+          color: #333333;
+          font-family: "Nunito Sans", sans-serif;
+        }
+      }
+      .noDataContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        .desc {
+          color: #000;
+          text-align: center;
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 12px; /* 30% */
+          @media screen and (max-width: 600px) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      padding: 20px 10px;
+    }
+  }
+}
+.payment_detail_drawer {
+  z-index: 10000000000 !important;
+  font-weight: 600 !important;
+  .ant-drawer-content-wrapper {
+    height: auto !important;
+  }
+  .item_row {
+    margin-bottom: 10px !important;
+  }
+}

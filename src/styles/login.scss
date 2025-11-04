@@ -1,0 +1,124 @@
+.loginContainer {
+  // background-color: #040524;
+  .loginContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px !important;
+    .loginCard {
+      border-radius: 30px;
+      padding: 20px 20px;
+      border-radius: 12px;
+      // border-top: 2px solid #f72586;
+      // background: #fff;
+      background-image: url("../Assets/bgbg3.jpg");
+      width: 543px;
+
+      .referCode {
+        color: #fff;
+        text-align: center;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0px !important;
+      }
+      .title {
+        color: #fff;
+        text-align: center;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @media screen and (max-width: 600px) {
+          font-size: 32px;
+        }
+      }
+      .otpContainer {
+        gap: 12px !important;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        span {
+          display: none !important;
+        }
+      }
+      .otpInput {
+        text-align: center;
+        width: 100% !important;
+        height: 42px;
+        color: #000 !important;
+        font-family: "Nunito Sans", sans-serif !important;
+        font-size: 20px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none !important;
+        border-bottom: 1px solid #f3f5f9 !important;
+        background: #fff !important;
+        border-radius: 8px !important;
+      }
+      .otpInput:focus-visible {
+        outline: #636363 !important;
+      }
+      .inputBox {
+        border-radius: 6px !important;
+        background: #fff !important;
+        margin-top: 32px;
+        border: none !important;
+        height: 44px !important;
+
+        border: 1px solid #000 !important;
+        input {
+          background: #fff !important;
+          color: #040524;
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .mobilePrefix {
+          color: #000;
+          //   text-align: center;
+          font-family: "Nunito Sans", sans-serif;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          font-size: 16px;
+          // font-style: normal;
+          // font-weight: 600;
+          // line-height: normal;
+        }
+      }
+      .login_btn {
+        padding: 10px 20px !important;
+        border-radius: 8px !important;
+        margin-top: 20px !important;
+        &:hover {
+          border: 1px solid #040524 !important;
+        }
+        font-size: 16px !important;
+      }
+      .resendOtp {
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: -16px !important;
+        @media screen and (max-width: 600px) {
+          font-size: 20px;
+        }
+        span {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}

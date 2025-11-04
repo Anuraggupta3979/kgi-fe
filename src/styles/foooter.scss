@@ -1,0 +1,49 @@
+.footer_main_container {
+  .content_footer_container {
+    background: rgba(151, 71, 255, 0.1882352941);
+    padding: 24px;
+    .logo {
+      width: 100%;
+      max-width: 211px;
+      height: auto;
+    }
+    .icon_container {
+      margin: 24px 0px 0px 0px;
+      img {
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+
+        font-size: 14px;
+        font-family: "Nunito Sans", sans-serif;
+        margin-bottom: 10px;
+      }
+    }
+    .copyright {
+      text-align: center;
+
+      font-size: 10px;
+      font-family: "Nunito Sans", sans-serif;
+      margin-top: 10px;
+    }
+  }
+  .footer_links_container {
+    .quick_links {
+      font-size: 16px;
+      text-decoration: underline;
+      padding: 4px 0px;
+      margin: 0;
+      font-family: "Nunito Sans", sans-serif;
+      color: #81026c;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      padding: 4px 0px;
+      margin: 0;
+      font-family: "Nunito Sans", sans-serif;
+      cursor: pointer;
+    }
+  }
+}

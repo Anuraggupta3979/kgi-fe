@@ -1,0 +1,815 @@
+* {
+  box-sizing: border-box;
+  // padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.primary_button {
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 28px;
+  padding: 10px 42px !important;
+  border-radius: 20px !important;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25) !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: auto !important;
+  background: #00207d !important;
+  &:hover {
+    color: #fff !important;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    padding: 10px 32px !important;
+  }
+  &:disabled {
+    background: #7a7a7a !important;
+
+    color: #505050 !important;
+  }
+}
+.primary_button2 {
+  border: 1px solid #040524;
+  color: #040524;
+  font-size: 10px !important;
+  font-weight: 700;
+  // height: 30px;
+  height: auto !important;
+  margin-right: 10px;
+  background-color: #fff;
+  &:hover {
+    color: #040524 !important;
+  }
+  background: d0e1f9;
+  padding: 6px 1.5rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
+  &:disabled {
+    background: #7a7a7a !important;
+    color: #505050 !important;
+  }
+}
+
+.primary_button3 {
+  border: 1px solid #040524;
+  color: #fff;
+  font-size: 12px !important;
+  font-weight: 700;
+  height: 30px;
+  height: auto !important;
+  margin-right: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 36, 66, 1) 0%,
+    rgba(8, 36, 66, 1) 47%,
+    rgba(4, 24, 45, 1) 100%
+  );
+  &:hover {
+    color: #fff !important;
+    background: linear-gradient(
+      90deg,
+      rgba(8, 36, 66, 1) 0%,
+      rgba(8, 36, 66, 1) 47%,
+      rgba(4, 24, 45, 1) 100%
+    ) !important;
+  }
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
+  &:disabled {
+    background: #7a7a7a !important;
+    color: #505050 !important;
+  }
+}
+.change_password_button {
+  background: linear-gradient(
+    90deg,
+    rgb(12, 95, 34) 0%,
+    rgb(8, 100, 39) 47%,
+    rgb(5, 98, 46) 100%
+  );
+  &:hover {
+    color: #fff !important;
+    background: linear-gradient(
+      90deg,
+      rgb(12, 95, 34) 0%,
+      rgb(8, 100, 39) 47%,
+      rgb(5, 98, 46) 100%
+    ) !important;
+  }
+}
+.reset_password_button {
+  background: linear-gradient(
+    90deg,
+    rgb(129, 35, 12) 0%,
+    rgb(121, 15, 5) 47%,
+    rgb(95, 26, 6) 100%
+  );
+  &:hover {
+    color: #fff !important;
+    background: linear-gradient(
+      90deg,
+      rgb(129, 35, 12) 0%,
+      rgb(121, 15, 5) 47%,
+      rgb(95, 26, 6) 100%
+    ) !important;
+  }
+}
+.primary_game_button {
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  padding: 6px 24px !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25) !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: auto !important;
+  background: #00207d !important;
+  margin-bottom: 12px;
+  // margin-top: -5px !important;
+  &:hover {
+    color: #fff !important;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    padding: 10px 32px !important;
+  }
+  &:disabled {
+    background: #7a7a7a !important;
+
+    color: #505050 !important;
+  }
+}
+.deleteBtn {
+  background: #b70b0b !important;
+}
+.cashBtn {
+  color: #000 !important;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+  padding: 10px 12px !important;
+  border-radius: 4px !important;
+  // box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25) !important;
+  font-style: normal;
+  min-width: 80px;
+  font-weight: 500;
+  line-height: normal;
+  height: auto !important;
+  border: 1px solid #00207d;
+  // background: #00207d !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+    padding: 4px 8px !important;
+    .amount {
+      font-size: 10px !important;
+    }
+  }
+}
+.headerRow {
+  font-size: 12px !important;
+  @media screen and (max-width: 600px) {
+    flex-direction: column !important;
+  }
+}
+.font-12 {
+  font-size: 12px !important;
+}
+
+.addCashBtn {
+  border-radius: 4px 4px 4px 4px !important;
+}
+.plusButton {
+  // background: #169a00 !important;
+  color: #169a00 !important;
+  border: 1px solid #169a00 !important;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px !important;
+  padding: 4px 6px !important;
+  border-radius: 0px 4px 4px 0px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 100% !important;
+  // border: none !important;
+  margin-left: -5px;
+  &:hover {
+    color: #fff !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    padding: 4px 6px !important;
+    .amount {
+      font-size: 12px;
+    }
+  }
+}
+.moreIcon {
+  height: 16px;
+  width: auto;
+
+  @media screen and (max-width: 600px) {
+    // height: 13px;
+    // width: auto;
+  }
+}
+.landingMainContainer {
+  min-height: calc(100vh - 100px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-image: url("../Assets/bg.png");
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: calc(100vh - 100px);
+    padding: 70px;
+    @media screen and (max-width: 600px) {
+      padding: 20px;
+      justify-content: center;
+    }
+  }
+
+  .referCard {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 4px 8px 20px 0px rgba(0, 0, 0, 0.25);
+    padding: 72px 32px;
+    height: 436px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    .title {
+      color: #000;
+      text-align: center;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .desc {
+      color: #169a00;
+      text-align: center;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 50px;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 42px 32px;
+
+      height: auto;
+      .title {
+        font-size: 42px;
+      }
+      .desc {
+        font-size: 28px;
+      }
+    }
+  }
+}
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+.mt-48 {
+  margin-top: 48px !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.h-100 {
+  height: 100% !important;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-24 {
+  margin-top: 24px !important;
+}
+::-webkit-scrollbar {
+  width: 6px !important; /* width of the entire scrollbar */
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important; /* color of the tracking area */
+  border: 1px solid #a02c27 !important;
+  border-radius: 74px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a02c27 !important; /* color of the scroll thumb */
+  border-radius: 74px !important; /* roundness of the scroll thumb */
+}
+.customPagination {
+  .ant-pagination-simple-pager {
+    display: none !important;
+  }
+  .ant-pagination {
+    a {
+      border-radius: 6px !important;
+      height: 32px !important;
+      background: #fff !important;
+      padding: 0px 8px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      border: 1px solid #e4e8ed !important;
+      path {
+        stroke: #a02c27 !important;
+      }
+    }
+  }
+  .ant-pagination-disabled {
+    a {
+      border: 1px solid #acbcf5 !important;
+      path {
+        stroke: #acbcf5 !important;
+      }
+    }
+  }
+  padding: 15px 8px;
+  .subDesc {
+    color: #a02c27;
+
+    /* Body text/B3 */
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: normal;
+    span {
+      color: #000;
+      font-weight: 700;
+    }
+  }
+  .mt-3 {
+    margin-top: -2px !important;
+  }
+  .pageNumbers {
+    margin: 0px 0px 0px 8px;
+    padding-left: 8px;
+    border-left: 1px solid #e7e8f2;
+  }
+}
+.errorModal {
+  .title {
+    color: #ca0000;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+  .btn {
+    color: #fff !important;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 28px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: normal;
+    background: #ca0000 !important;
+    height: auto !important;
+    border-radius: 10px !important;
+  }
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.notificationItem {
+  color: #333333;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+  &::before {
+    content: "->  ";
+  }
+}
+
+.ant-message {
+  .ant-message-notice-success {
+    .ant-message-notice-content {
+      border-radius: 8px !important;
+      border: 1px solid #f72586 !important;
+      background: #ffeef6 !important;
+      // padding: 14px 16px !important;
+      .anticon {
+        display: none !important;
+      }
+      span {
+        color: #333333 !important;
+        font-family: Arial !important;
+        // margin-left: 10px !important;
+        font-size: 14px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          padding-right: 6px !important;
+          margin-top: 4px !important;
+          // margin-right: 12px !important  ;
+          content: url("../Assets/success.svg");
+        }
+      }
+    }
+  }
+  .ant-message-notice-error {
+    .ant-message-notice-content {
+      border-radius: 8px !important;
+      border: 1px solid #d03c28 !important;
+      background: #fff1f4 !important;
+      // padding: 14px 16px !important;
+      .anticon {
+        display: none !important;
+      }
+      span {
+        color: #d03c28 !important;
+        font-family: Arial !important;
+        // margin-left: 10px !important;
+        font-size: 14px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          padding-right: 6px !important;
+          margin-top: 4px !important;
+          // margin-right: 12px !important  ;
+          content: url("../Assets/danger.svg");
+        }
+      }
+    }
+  }
+}
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 60px;
+  right: 15px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.my-float {
+  margin-top: 12px;
+}
+.youtube_container {
+  border: 1px solid #51015b;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+  .you_tag_container {
+    position: absolute;
+    top: -10px;
+    left: 60px;
+    transform: translateX(-50%);
+    font-weight: bold;
+    background: #d0e1f9;
+    padding: 0px 4px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    color: #51015b;
+  }
+  p {
+    color: #51015b;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+    }
+  }
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+.downloadContainer {
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 62px !important;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+      // font-size: 1rem;
+      max-width: 50px !important;
+    }
+  }
+}
+.footer_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border:1px solid yellow; */
+  padding: 0.5rem 2rem 0;
+  /* border:1px solid #fff; */
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.profile_icon svg {
+  color: #fff;
+}
+
+.profile_icon_margin_left {
+  margin-left: 5rem;
+}
+
+.profile_icon .title_name {
+  color: #fff;
+  font-size: 0.75rem !important;
+  margin-bottom: 0 !important;
+  /* font-weight: lighter; */
+  font-weight: 300;
+  // font-family: var(--poppins-font);
+}
+#userFooterBar {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 36, 66, 1) 0%,
+    rgba(8, 36, 66, 1) 47%,
+    rgba(4, 24, 45, 1) 100%
+  );
+  /* border: 1px solid black; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  // background-color: #1a1a1a;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.3rem !important;
+}
+.game_btn_main {
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0.5rem;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.profile_btn_box {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  /* background-color: var( --light-blue-color); */
+  background: linear-gradient(
+    90deg,
+    rgba(8, 36, 66, 1) 0%,
+    rgba(8, 36, 66, 1) 47%,
+    rgba(4, 24, 45, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_game_btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  background-color: transparent;
+}
+
+.profile_game_btn i {
+  font-size: 2rem;
+  transform: rotate(45deg);
+  color: yellow;
+}
+
+.icon_zindex {
+  position: relative;
+  z-index: 2;
+}
+
+// download button
+
+.app_download_bar {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(112, 14, 14) 0%,
+    rgb(112, 14, 14) 47%,
+    rgb(112, 14, 14) 100%
+  );
+
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 0px;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+//timer style
+/* Countdown Container */
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // height: 100vh;
+  // background: linear-gradient(249.51deg, #f1f1f2 18.21%, #858084 78.38%);
+  color: black;
+  font-family: Arial;
+  text-align: center;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  // padding: 10px;
+}
+
+/* Countdown Title */
+.countdown-title {
+  color: #a41414;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 10px;
+  font-style: normal;
+  margin-bottom: 8px !important;
+  font-weight: 800;
+  line-height: normal;
+}
+
+/* Countdown Timer */
+.countdown-timer {
+  font-size: 8px;
+  font-weight: bold;
+  background: linear-gradient(180deg, #414141 0%, #000000 100%);
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  animation: scaleUp 1s ease-in-out;
+  color: white;
+}
+
+/* Style each time segment (Day, Hour, Minute, Second) */
+.countdown-timer span {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff9100, #ff3d00);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for timer segments */
+.countdown-timer span:hover {
+  background: linear-gradient(135deg, #d500f9, #ff7a00);
+  cursor: pointer;
+}
+
+/* Animation for scaling effect */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.25);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+//offer
+.offer_heading {
+  color: #000;
+
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 1rem;
+  font-style: normal;
+  margin-bottom: 8px !important;
+  font-weight: 800;
+  line-height: normal;
+}
+.winner_name {
+  color: #000;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 1rem;
+  font-style: normal;
+  margin-bottom: 8px !important;
+  font-weight: 800;
+  line-height: normal;
+  span {
+    font-weight: 500;
+  }
+}
+.rule {
+  color: #000;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom: 8px !important;
+
+  line-height: normal;
+}
+
+.offer_cards {
+  margin-top: 36px;
+  .offer_card {
+    margin-bottom: 32px;
+    border-radius: 10px;
+    border-radius: 12px;
+    background-color: rgba(151, 71, 255, 0.1882352941);
+    padding: 10px 20px;
+  }
+  .title {
+    color: #81026c;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .resultNumber {
+    color: #000;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .resultNumber2 {
+    color: #000;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
