@@ -1,9 +1,9 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 import { message } from "antd";
-// const baseURL = `https://api.kgipay.com/api/v1/`;
+const baseURL = `https://be.kgipay.com/api/v1/`;
 
-const baseURL = `http://13.204.197.240:5010/api/v1/`;
+// const baseURL = `http://13.204.197.240:5010/api/v1/`;
 // const baseURL = `http://localhost:5010/api/v1/`;
 let HELPERS = {
   getCookie: (name) => {
