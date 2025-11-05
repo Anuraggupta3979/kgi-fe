@@ -112,7 +112,7 @@ function Login() {
         localStorage.setItem("hashcode", jsonData?.token?.accessToken);
         getSiteSettings();
 
-        router.push("/tournaments");
+        router.push("/");
       } catch (error) {
         message.error(
           error?.response?.data?.message || "Something went wrong!"
