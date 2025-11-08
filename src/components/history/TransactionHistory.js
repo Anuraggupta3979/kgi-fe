@@ -75,9 +75,10 @@ function TransactionHistory({ user }) {
             <b>
               <span style={{ textTransform: "uppercase" }}>
                 {" "}
-                {row?.Req_type === "manualwithdraw"
-                  ? "WITHDRAW"
-                  : row?.Req_type}
+                {row?.Req_type === "manualwithdraw" ||
+                row?.Req_type === "withdraw"
+                  ? "Payout"
+                  : "Deposit"}
               </span>{" "}
               {row?.Req_type !== "bonus" && (
                 <>
@@ -85,9 +86,9 @@ function TransactionHistory({ user }) {
                   (row?.status === "Pending" &&
                     (row?.Req_type === "withdraw" ||
                       row?.Req_type === "manualwithdraw"))
-                    ? "Processing"
+                    ? "Pending"
                     : row?.status === "Pending" && row?.Req_type === "deposit"
-                    ? "Cancelled"
+                    ? "Pending"
                     : row?.status}
                 </>
               )}
@@ -105,15 +106,6 @@ function TransactionHistory({ user }) {
                   }}
                 />
               )}
-              {row?.Req_type === "manualwithdraw" &&
-                row?.status === "Pending" && (
-                  <Button
-                    onClick={() => cancelWithdrawalRequest(row?._id)}
-                    className="reset_password_button"
-                  >
-                    <span style={{ color: "white" }}>Cancel</span>
-                  </Button>
-                )}
               {row?.payment_gatway === "depositrmspay" &&
                 row?.order_id &&
                 row?.Req_type === "deposit" &&
@@ -190,23 +182,6 @@ function TransactionHistory({ user }) {
         );
       },
     },
-    // {
-    //   title: "Closing Balance",
-    //   dataIndex: "closing_balance",
-    //   align: "center",
-    //   render: (item) => <span>{numberWithCommas(item ? item : 0)}</span>,
-    // },
-    // {
-    //   title: "Status",
-    //   dataIndex: "status",
-    //   render: (item, row) => (
-    //     <div>
-    //       {row?.status === "PAID" && <Image src={RightIcon} alt="Pass" />}
-    //       {row?.status === "FAILED" && <Image src={wrongIcon} alt="Pass" />}
-    //     </div>
-    //   ),
-    //   align: "center",
-    // },
   ];
   return (
     <div style={{ height: "100%" }}>
